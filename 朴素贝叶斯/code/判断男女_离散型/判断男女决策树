@@ -1,0 +1,13 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=FangSong] ;
+edge [fontname=FangSong] ;
+0 [label=<身高=矮 &le; 0.5<br/>entropy = 1.0<br/>samples = 8<br/>value = [4, 4]<br/>class = 男>, fillcolor="#ffffff"] ;
+1 [label=<鞋码=大 &le; 0.5<br/>entropy = 0.722<br/>samples = 5<br/>value = [1, 4]<br/>class = 女>, fillcolor="#6ab6ec"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<entropy = 1.0<br/>samples = 2<br/>value = [1, 1]<br/>class = 男>, fillcolor="#ffffff"] ;
+1 -> 2 ;
+3 [label=<entropy = 0.0<br/>samples = 3<br/>value = [0, 3]<br/>class = 女>, fillcolor="#399de5"] ;
+1 -> 3 ;
+4 [label=<entropy = 0.0<br/>samples = 3<br/>value = [3, 0]<br/>class = 男>, fillcolor="#e58139"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
